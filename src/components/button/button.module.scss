@@ -1,0 +1,33 @@
+.button {
+  font-size: .85em;
+  padding: 16px 34px 13px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  font-weight: 700;
+  color: #fff;
+  background-color: #f25f3a;
+  -webkit-box-shadow: 0 12px 14px -6px rgba(242, 95, 58, 0.5);
+  -moz-box-shadow: 0 12px 14px -6px rgba(242, 95, 58, 0.5);
+  box-shadow: 0 12px 14px -6px rgba(242, 95, 58, 0.5);
+
+  &.white {
+    background-color: #fff;
+    color: #f25f3a;
+    box-shadow: none;
+  }
+  &.noShadow {
+    box-shadow: none;
+  }
+  &.formButton {
+    padding: 16px 30px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .button {
+    &.formButton {
+      padding: 16px 20px;
+      text-transform: capitalize;
+    }
+  }
+}

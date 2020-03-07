@@ -1,0 +1,135 @@
+.header {
+  height: 107px;
+  display: flex;
+  align-items: center;
+  > * {
+    flex: 1;
+  }
+}
+.logoWrapper {
+  height: 1.125em;
+}
+.nav {
+  width: 100%;
+  padding: 0 4px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburgerBtn {
+  height: 18px;
+  width: 36px;
+  box-sizing: content-box;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+
+  margin-top: -8px;
+
+  .middleLine {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin-top: -2px;
+    margin-left: -8.5px;
+    background-color: hsl(228, 39%, 23%);
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: hsl(228, 39%, 23%);
+    }
+
+    &::before {
+      top: -6.5px;
+
+    }
+
+    &::after {
+      top: 7.5px;
+    }
+  }
+
+  &.isActive {
+    .middleLine {
+      background: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.navList {
+  overflow: hidden;
+  display: none;
+}
+@media screen and (max-width: 720px) {
+
+  .JSnavActive {
+    .navList {
+      position: fixed;
+      padding: 102px 24px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: block;
+      z-index: 4;
+      background: linear-gradient(180deg, transparent, #666);
+
+      ul {
+        background-color: #fff;
+        border-radius: 4px;
+        text-align: center;
+        padding: 26px 0;
+
+        li {
+          font-weight: 700;
+          padding: 1em 0;
+          color: hsl(228, 39%, 23%);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 720px) {
+  .header {
+    height: 156px;
+  }
+  .logoWrapper {
+    padding-top: 14px;
+  }
+  .navList{
+    display: block;
+    position: static;
+    background: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        font-size: .8em;
+        font-weight: 500;
+        padding: 0 16px;
+      }
+    }
+  }
+}

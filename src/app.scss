@@ -1,0 +1,16 @@
+.App {
+  background-image: url('./img/bg-tablet-pattern.svg'),
+                    url('./img/bg-tablet-pattern.svg');
+  background-repeat: no-repeat,
+                     no-repeat;
+  background-position: right -150px top -150px,
+                       left -500px top 1120px;
+  overflow: hidden;
+
+}
+@media screen and (max-width: 720px) {
+  .App {
+    background-size: 120%, 120%;
+    background-position: right -135px top -105px;
+  }
+}

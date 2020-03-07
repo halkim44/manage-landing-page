@@ -1,0 +1,15 @@
+.logo {
+  height: 100%;
+  > a {
+    height: 100%;
+    display: block;
+  }
+}
+.logo img {
+  height: 100%;
+}
+@media screen and (min-width: 720px) {
+  .logo {
+    height: 1.5em;
+  }
+}

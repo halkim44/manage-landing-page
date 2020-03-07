@@ -1,0 +1,48 @@
+
+.graphImgContainer {
+  background-image: url('illustration-intro.svg');
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 310px;
+}
+.textContent {
+  text-align: center;
+
+  h1 {
+    padding-bottom: 10px;
+    line-height: 1.24em;
+    letter-spacing: -1.2px;
+  }
+
+  p {
+    line-height: 1.75em;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 720px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 54px;
+  }
+  .graphImgContainer {
+    flex: 1;
+    height: 550px;
+  }
+  .textContent {
+    flex: 1;
+    text-align: left;
+    h1 {
+      line-height: 1.16em;
+      font-size: 3.5em;
+      padding: 60px 0 30px;
+    }
+    p {
+      max-width: 350px;
+      margin-bottom: 40px;
+    }
+  }
+}
+

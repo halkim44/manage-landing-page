@@ -1,0 +1,96 @@
+.intro {
+  margin-top: 80px;
+}
+
+.header {
+  text-align: center;
+  font-size: 1;
+  padding: 0 16px 50px;
+  h2 {
+    line-height: 1.55em;
+    font-size: 1.8em;
+    padding: 15px 0;
+    font-weight: 800;
+  }
+  p {
+    font-size: .9em;
+    line-height: 1.95em;
+  }
+}
+
+.featureList {
+  li {
+    margin-bottom: 50px;
+  }
+  h3 {
+    background-color: #ffefeb;
+    margin-right: -24px;
+    font-size: .98em;
+    line-height: 2.5em;
+    position: relative;
+    padding-left: 78px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: .86em;
+    line-height: 2em;
+  }
+}
+.listNum {
+  display: block;
+  position: absolute;
+  color: #fff;
+  line-height: inherit;
+  padding: 0 24px;
+  left: -4px;
+  border-radius: 600px;
+  background-color: #f25f3a;
+}
+@media screen and (min-width: 720px) {
+  .intro {
+    display: flex;
+    > * {
+      flex: 1;
+    }
+  }
+  .header {
+    padding: 0 6px;
+    text-align: left;
+
+    h2 {
+      font-size: 2.5em;
+      line-height: 1.2em;
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+    p {
+      max-width: 350px;
+      font-size: 1em;
+      line-height: 1.6em;
+    }
+  }
+  .featureList {
+    padding-left: 20px;
+    li {
+      &:first-child {
+        p {
+          padding-right: 20px;
+        }
+      }
+      &:last-child {
+        p {
+          padding-right: 40px;
+        }
+      }
+    }
+    h3 {
+      background-color: initial;
+      padding-left: 92px;
+    }
+    p {
+      padding-left: 92px;
+      font-size: 1em;
+      line-height: 1.6em;
+    }
+  }
+}

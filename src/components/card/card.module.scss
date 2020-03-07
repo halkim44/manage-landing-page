@@ -1,0 +1,36 @@
+.card {
+  text-align: center;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 106px;
+  position: relative;
+
+  img {
+    display: block;
+    height: 75px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.textContainer {
+  padding: 40px 24px;
+  h4 {
+    font-weight: 700;
+    color: #242d52;
+    margin: 24px 0;
+  }
+
+  p {
+    font-size: .86em;
+    line-height: 1.9em;
+  }
+}
+@media screen and (min-width: 720px) {
+  .textContainer {
+    p {
+      font-size: 1em;
+      line-height: 1.68em;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.footer {
+  background-color: hsl(233, 12%, 13%);
+  padding: 50px 0 30px;
+}
+.formInner {
+  display: flex;
+  padding-right: 4px;
+  margin-bottom: 45px;
+  label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  input {
+    border: none;
+    flex: 1;
+    border-radius: 100px;
+    padding: 0 20px;
+    margin: 0 8px;
+  }
+}
+
+.linksWrapper {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 28px;
+  padding-left: 44px;
+  margin-bottom: 40px;
+
+  li {
+    padding: 12px 0;
+    font-size: .9em;
+  }
+}
+
+.socMedWrapper {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 55px;
+
+  a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &.fb {
+      background-image: url('img/icon-facebook.svg');
+    }
+
+    &.yt {
+      background-image: url('img/icon-youtube.svg');
+    }
+
+    &.tw {
+      background-image: url('img/icon-twitter.svg');
+    }
+
+    &.pin {
+      background-image: url('img/icon-pinterest.svg');
+    }
+
+    &.ins {
+      background-image: url('img/icon-instagram.svg');
+    }
+
+  }
+  svg {
+    width: 50px;
+    height: auto;
+  }
+}
+
+.logoWrapper {
+  height: 1.6em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.copyR {
+  color: rgba($color: #fff, $alpha: .5);
+  font-size: .78em;
+  line-height: 1.7em;
+  text-align: center;
+  display: block;
+}
+@media screen and (min-width: 720px) {
+  .footer {
+    padding: 66px 0 38px;
+  }
+  .flexContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+  .formInner {
+    input {
+      width: 200px;
+    }
+  }
+
+  .linksWrapper {
+    width: 450px;
+    margin-right: 50px;
+    margin-bottom: 0;
+    margin-top: -10px;
+  }
+  .socMedWrapper {
+    margin: 0;
+    a {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .socMedAndLogo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-bottom: 16px;
+  }
+  .copyR {
+    position: absolute;
+    bottom: 25px;
+  }
+}
