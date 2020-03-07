@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "./static/css/main.36c35e44.chunk.css",
+    "main.js": "./static/js/main.5ce1634f.chunk.js",
+    "main.js.map": "./static/js/main.5ce1634f.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.c17e7065.js",
+    "runtime-main.js.map": "./static/js/runtime-main.c17e7065.js.map",
+    "static/js/2.a44c419b.chunk.js": "./static/js/2.a44c419b.chunk.js",
+    "static/js/2.a44c419b.chunk.js.map": "./static/js/2.a44c419b.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.28c0b1a6d749bd892856b31fa5d4e19b.js": "./precache-manifest.28c0b1a6d749bd892856b31fa5d4e19b.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.36c35e44.chunk.css.map": "./static/css/main.36c35e44.chunk.css.map",
+    "static/js/2.a44c419b.chunk.js.LICENSE.txt": "./static/js/2.a44c419b.chunk.js.LICENSE.txt",
+    "static/media/avatar-ali.png": "./static/media/avatar-ali.d022b688.png",
+    "static/media/avatar-anisha.png": "./static/media/avatar-anisha.d591dc60.png",
+    "static/media/avatar-richard.png": "./static/media/avatar-richard.a2c4b430.png",
+    "static/media/avatar-shanai.png": "./static/media/avatar-shanai.b2507cb2.png",
+    "static/media/app.scss": "./static/media/bg-tablet-pattern.01061791.svg",
+    "static/media/footer.module.scss": "./static/media/icon-youtube.8e2f566f.svg",
+    "static/media/hero.module.scss": "./static/media/illustration-intro.6a53bba8.svg",
+    "static/media/logo-white.svg": "./static/media/logo-white.b3430221.svg",
+    "static/media/logo.svg": "./static/media/logo.f2cec4b2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c17e7065.js",
+    "static/js/2.a44c419b.chunk.js",
+    "static/css/main.36c35e44.chunk.css",
+    "static/js/main.5ce1634f.chunk.js"
+  ]
+}
